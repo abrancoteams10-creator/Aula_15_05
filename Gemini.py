@@ -1,8 +1,6 @@
-!pip install google-genai
 
-import os
-from google.colab import userdata
-os.environ["GOOGLE_API_KEY"] = userdata.get('GeminiAPI')
+import streamlit as st
+st.secrets["GOOGLE_API_KEY"] = userdata.get('GeminiAPI')
 
 from google import genai
 client = genai.Client()
