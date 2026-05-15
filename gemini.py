@@ -1,0 +1,4 @@
+streamlit
+supabase
+st-gsheets-connection
+google-genai
